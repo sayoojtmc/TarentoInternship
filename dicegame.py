@@ -39,7 +39,9 @@ for turn in range(1,5):  #Game Loop
 print("****** Total Score ********")
 print("{} : {}".format(player1.name,player1.score))
 print("{} : {}".format(player2.name,player2.score))
-if(player1.score>player2.score):
+if(player1.score>player2.score):    # All win conditions
     print(player1.name + " wins!")
-else:
+elif(player2.score>player1.score):
     print(player2.name + " wins!")
+else:
+    print("Tie Game!")
