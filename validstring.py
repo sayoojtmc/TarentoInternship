@@ -6,7 +6,7 @@ Question
 - Print the cleansed String and the count of characters removed
 Eg. If the String input is
 The name of my dog is #2#Tiger
-and the valid chars is abcdefghijklmnopqrstuvwxyz 123
+and the valid chars is abcdefghijklmnopqrstuvwxyz
 then the output should be as below
 The name of my dog is Tiger
 2 # was removed
@@ -26,10 +26,10 @@ valid.add(" ")  # Apparently , Space is always considered valid
 removeCount = {}        #dictionary to store count of removed characters
 
 newstr = ""     #new string with only valid characters
-for char in s:
-    if char in valid:
+for char in s:          #in this loop each character input string is compared with valid string 
+    if char in valid:   #if char belongs to valid , it is added to result string
         newstr+=char
-    else:
+    else:               #if not the removecount dictionary is updated by 1
         if char in removeCount.keys():
             removeCount[char]+=1
         else:

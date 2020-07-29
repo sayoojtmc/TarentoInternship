@@ -26,7 +26,7 @@ player2 = Player(name)
 for turn in range(1,5):  #Game Loop    
     print("******** Round {} **********".format(turn))   
     print("{} is rolling".format(player1.name))
-    time.sleep(1)
+    time.sleep(1)               # Adds pause for rolling
     score = random.randint(1,6) # finds random value between 1 and 6
     print("{} got {}".format(player1.name,score))
     player1.score+=score
